@@ -6,7 +6,7 @@
 /*   By: egiacomi <egiacomi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 17:22:52 by egiacomi          #+#    #+#             */
-/*   Updated: 2021/11/29 15:40:35 by egiacomi         ###   ########.fr       */
+/*   Updated: 2021/11/29 19:06:50 by egiacomi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@
 # include "libft/libft.h"
 
 int		client(int pid, char *str);
-void	sig_handler(int param);
+void	sig_handler(int param, siginfo_t *info, void *context);
 
 #endif

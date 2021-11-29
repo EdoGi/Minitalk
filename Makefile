@@ -9,20 +9,20 @@ HEADERS	=	./
 all :		${EXEC}
 
 client :
-			@$(MAKE) -C ./libft
-			@${CC} ${CFLAGS} -I ${HEADERS} client.c -o $@ ${LIBRARY}
+			$(MAKE) -C ./libft
+			${CC} ${CFLAGS} -I ${HEADERS} client.c -o $@ ${LIBRARY}
 
 server :
-			@$(MAKE) -C ./libft
-			@${CC} ${CFLAGS} -I ${HEADERS} server.c -o $@ ${LIBRARY}
+			$(MAKE) -C ./libft
+			${CC} ${CFLAGS} -I ${HEADERS} server.c -o $@ ${LIBRARY}
 
 clean :	
-			@$(MAKE) -C ./libft clean
-			@${RM} server.o client.o
+			$(MAKE) -C ./libft clean
+			${RM} server.o client.o
 
 fclean :	clean 
-			@$(MAKE) -C ./libft fclean
-			@${RM} server client minitalk.h.gch
+			$(MAKE) -C ./libft fclean
+			${RM} server client minitalk.h.gch
 
 re :		fclean all
 
