@@ -6,7 +6,7 @@
 /*   By: egiacomi <egiacomi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 10:11:55 by egiacomi          #+#    #+#             */
-/*   Updated: 2021/11/29 19:54:28 by egiacomi         ###   ########.fr       */
+/*   Updated: 2021/11/29 20:15:05 by egiacomi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int	client(int pid, char *str)
 			else
 				kill(pid, SIGUSR2);
 			binstr >>= 1;
-			usleep(2500);
+			usleep(5000);
 		}
 		i++;
 	}
