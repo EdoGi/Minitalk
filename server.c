@@ -6,7 +6,7 @@
 /*   By: egiacomi <egiacomi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 14:18:15 by egiacomi          #+#    #+#             */
-/*   Updated: 2021/11/29 16:16:36 by egiacomi         ###   ########.fr       */
+/*   Updated: 2021/11/29 18:01:37 by egiacomi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	sig_handler(int param)
 		if (c == '\0')
 		{
 			ft_printf("\n");
-			ft_printf("\n\tMessage Received\n\n");
+			ft_printf("\n\tMessage Received 😊\n\n");
 		}
 		i = 0;
 		c = 0;
